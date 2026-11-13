@@ -1,0 +1,25 @@
+[project]
+name = "langgraph-basic"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "keshav1147", email = "keshav.1147@zenmonk.tech" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "langchain>=1.5.0",
+    "langchain-groq>=1.1.3",
+    "langchain-tavily>=0.2.18",
+    "langgraph>=1.2.21",
+    "langsmith>=0.14.17",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+langgraph-basic = "langgraph_basic:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
